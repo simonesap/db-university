@@ -1,0 +1,8 @@
+6. Selezionare tutti i corsi di laurea magistrale (38)
+
+
+- Codice:
+
+SELECT * 
+FROM `degrees` 
+WHERE level LIKE '%magistrale%';
