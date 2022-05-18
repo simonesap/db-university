@@ -1,0 +1,9 @@
+2. Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze
+
+
+- Codice: 
+
+SELECT * 
+FROM `departments` 
+JOIN `degrees` ON `departments`.`id` = `degrees`.`department_id` 
+WHERE `departments`.`name` LIKE "%Dipartimento di Neuroscienze%" AND `degrees`.`name` LIKE "%Corsi di Laurea Magistrale%" 

@@ -1,0 +1,8 @@
+2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+
+- Codice:
+
+SELECT COUNT(id) AS `insegnanti_per_edificio`, `office_address` AS `edificio_insegnanti`
+FROM `teachers` 
+GROUP BY `office_address`;
